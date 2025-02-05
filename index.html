@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Introductions Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: grey;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .main-info h1 {
-            margin: 0;
-        }
-        .section {
-            background: #e7e7e7;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-        .ali .main-info {
-            background: #333;
-        }
-        .yazeed .main-info {
-            background: #004080;
-        }
-        .hamza .main-info {
-            background: #800020;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .last-updated {
-            text-align: center;
-            margin-top: 20px;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introductions Website</title>
+  <style>
+    /* Basic reset and styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    /* Card styling */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 20px;
+      color: #fff;
+    }
+    .ali .card-header {
+      background-color: #333;
+    }
+    .yazeed .card-header {
+      background-color: #004080;
+    }
+    .hamza .card-header {
+      background-color: #800020;
+    }
+    .card-header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content p {
+      margin: 10px 0;
+    }
+    .card-content a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container ali">
-        <header class="main-info">
-            <h1>Ali Al Shamsi</h1>
-            <p>Email: <a href="mailto:b00089112@aus.edu">b00089112@aus.edu</a></p>
-            <p>Resume link: <a href="ali.html">resume</a></p>
-
-        </header>
-	    <header class="main-info">
-            <h1>Yazeed Alomari</h1>
-            <p>Email: <a href="mailto:b00084415@aus.edu">b00089112@aus.edu</a></p>
-            <p>Resume link: <a href="yazeed.html">resume</a></p>
-		    
-        </header>
-	    <header class="main-info">
-            <h1>Hamza Kharouf</h1>
-            <p>Email: <a href="mailto:b00096121@aus.edu">b00089112@aus.edu</a></p>
-            <p>Resume link: <a href=""> resume </a></p>
-		    
-        </header>
+  <div class="container">
+    <!-- Ali's Card -->
+    <div class="card ali">
+      <div class="card-header">
+        <h1>Ali Al Shamsi</h1>
+      </div>
+      <div class="card-content">
+        <p>Email: <a href="mailto:b00089112@aus.edu">b00089112@aus.edu</a></p>
+        <p>
+          Resume link: 
+          <a href="ali.html">HTML Resume</a> | 
+          <a href="cv.pdf" target="_blank">PDF Resume</a>
+        </p>
+      </div>
     </div>
+
+    <!-- Yazeed's Card -->
+    <div class="card yazeed">
+      <div class="card-header">
+        <h1>Yazeed Alomari</h1>
+      </div>
+      <div class="card-content">
+        <p>Email: <a href="mailto:b00084415@aus.edu">b00084415@aus.edu</a></p>
+        <p>
+          Resume link: 
+          <a href="yazeed.html">HTML Resume</a> | 
+          <a href="yazeed_resume.pdf" target="_blank">PDF Resume</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Hamza's Card -->
+    <div class="card hamza">
+      <div class="card-header">
+        <h1>Hamza Kharouf</h1>
+      </div>
+      <div class="card-content">
+        <p>Email: <a href="mailto:b00096121@aus.edu">b00096121@aus.edu</a></p>
+        <p>
+          Resume link: 
+          <a href="hamza_cv.html">HTML Resume</a> | 
+          <a href="hamza_resume.pdf" target="_blank">PDF Resume</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Last updated: [5/2/2025]</p>
+  </footer>
 </body>
 </html>
